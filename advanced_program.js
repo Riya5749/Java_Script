@@ -125,14 +125,14 @@ console.log();
 
 console.log();
 
-// Find the intersection of two arrays:
-// Write a function that takes two arrays and return a new array containg elements common
+// Program-5) Find the intersection of two arrays:
+// Write a function that takes two arrays and return a new array containing elements common
 // to both arrays.
 
 {
     let arr1 = [3, 6, 3, 6, 79, 7]
-
     let arr2 = [3, 5, 9, 79, 8, 7]
+
     let intersection = []
     for (let i = 0; i < arr1.length; i++) {
         if (arr1[i] == arr2[i]) {
@@ -144,8 +144,8 @@ console.log();
 
 {
     let arr1 = [3, 6, 3, 6, 79, 7]
-
     let arr2 = [3, 5, 9, 79, 8, 7]
+
     let intersection = []
     for (let i in arr1) {
         if (arr1[i] == arr2[i]) {
@@ -157,8 +157,8 @@ console.log();
 
 {
     let arr1 = [3, 6, 3, 6, 79, 7]
-
     let arr2 = [3, 5, 9, 79, 8, 7]
+
     let intersection = []
     let i = 0
     while (i < arr1.length) {
@@ -169,15 +169,147 @@ console.log();
     }
     console.log("3) This Solution is simple while loop =>", intersection);
 }
+console.log();
 
+//Program-6) Array chunking:
+// Write a function that splits an array into chunks of a specified size.
+{
+    let arr = [3, 6, 3, 7, 89, 68, 45, 34]
 
+    console.log("This Solution is Simple for loop=>");
+    for (let i = 0; i < arr.length; i++) {
+        let bag = ""
+        for (let j = 0; j <= i; j++) {
+            bag += arr[j] + "  "
+        }
+        console.log(bag);
 
+    }
+}
 
+{
+    let arr = [3, 6, 3, 7, 89, 68, 45, 34]
 
+    console.log("2) This solution is Simple while loop=>");
+    let i = 0
+    while (i < arr.length) {
+        let bag = ""
+        let j = 0
+        while (j <= i) {
+            bag += arr[j] + "  "
+            j++
+        }
+        console.log(bag);
+        i++
+    }
+}
+console.log();
 
+//Program-7) Rotate an array: 
+//Write a function to rotate an array by n positions.
+{
+    let arr = [5, 7, 3, 2, 9, 78, 4]
 
+    let arr1 = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        arr1.push(arr[i])
+    }
+    console.log("1) This solutin is simple for loop=>", arr1);
+}
 
+{
+    let arr = [5, 7, 3, 2, 9, 78, 4]
 
+    let i = arr.length - 1
+    let arr1 = []
+    while (i >= 0) {
+        arr1.push(arr[i])
+        i--
+    }
+    console.log("2) This solutin is simple while loop=>", arr1);
+}
+console.log();
+
+// // Program-8) Find the missing number: 
+// // Write a function that takes an array contains number from 1 to n 
+// // with one number missing, and return the missing number
+{
+    let arr = [1, 3, 5, 6, 7, 8]
+
+    let s = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== s) {
+            console.log("1) This Solution is Simple for loop =>", s);
+            break;
+        }
+        s++
+    }
+}
+
+{
+    let arr = [1, 2, 3, 5, 6]
+
+    let s = arr[0]
+    for (let i in arr) {
+        if (arr[i] !== s) {
+            console.log("2) This Solution is Simple in loop =>", s);
+            break;
+        }
+        s++
+    }
+}
+
+let arr = [1, 2, 3, 6]
+
+let s = arr[0]
+for (let i of arr) {
+    if (i !== s) {
+        console.log("3) This Solution is Simple of loop =>", s);
+        break;
+    }
+    s++
+}
+
+{
+    let arr = [1, 3, 4, 5, 6]
+
+    let s = arr[0]
+    let i = 0
+    while (i < arr.length) {
+        if (arr[i] != s) {
+            console.log("4) This Solution is Simple While loop =>", s);
+            break;
+        }
+        i++
+        s++
+    }
+
+}
+console.log();
+
+// Program-10) Reverse a string;
+// Write a function to reverse a string.
+{
+    let s = "Riya Sindhu"
+
+    let bag = ""
+    for (let i = s.length - 1; i >= 0; i--) {
+        bag += s[i]
+    }
+    console.log("1) This Solution is Simple for loop =>", bag);
+}
+
+{
+    let s = "Riya Sindhu"
+
+    let bag = ""
+    let i = s.length - 1
+    while (i >= 0) {
+        bag += s[i]
+        i--
+    }
+    console.log("2) This Solution is Simple While loop =>", bag);
+}
 
 
 
