@@ -310,10 +310,97 @@ console.log();
     }
     console.log("2) This Solution is Simple While loop =>", bag);
 }
+console.log()
 
 
+//Progra-12) Count Vowels in a String:
+// Write a function to count the number of vowels in a given string.
+{
+    let str = "Riya Sindhu"
 
+    let count = 0
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u") {
+            count++
+        }
+        else {
 
+        }
+    }
+    console.log("1) This Solution is simple for loop =>", count)
+}
+
+{
+    let str = "Riya Sindhu"
+
+    let count = 0
+    for (let i in str) {
+        if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u") {
+            count++
+        }
+        else {
+
+        }
+    }
+    console.log("2) This Solution is simple in loop =>", count)
+}
+
+{
+    let str = "Riya Sindhu"
+
+    let count = 0
+    for (let i of str) {
+        if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u") {
+            count++
+        }
+        else {
+
+        }
+    }
+    console.log("3) This Solution is Simple of loop =>", count)
+}
+
+{
+    let str = "Riya Sindhu"
+
+    let count = 0
+    let i = 0
+    while (i < str.length) {
+        if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u") {
+            count++
+        }
+        else {
+
+        }
+        i++
+    }
+    console.log("4) This Solution is Simple While loop =>", count)
+}
+
+//Program-13) Find the Longest Word in a Sentence:
+// Write a function to find the longest word in a given sentence.
+{ 
+let str="I Love Java Script"
+let arr=[]
+let word=""
+for(let char of str){
+    if(char!=""){
+        word=word+char
+    }
+    else{
+        arr.push(word)
+        word=" "
+    }
+}
+arr.push(word)
+console.log(word)
+}
+
+{
+    str="I love java"
+    arr=str.split("")
+    console.log(arr)
+}
 
 
 
