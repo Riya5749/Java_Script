@@ -134,14 +134,51 @@ console.log()
     let time = 22.00
 
     if (time < 12.00) {
-        console.log("🌄Good Morning")
+        console.log("🌄 Good Morning")
     }
     else if (time < 18.00) {
-        console.log("🕝Good afternoon")
+        console.log("🕝 Good afternoon")
     }
     else {
-        console.log("🌃Good Evening")
+        console.log("🌃 Good Evening")
     }
 }
 console.log()
 
+//Program-9) Write a program that calculates the Body Mass Index(BMI) and categorizes it.
+// The formula of BMI is: weight/(height*height)
+{
+    let height=5.3
+    let weight=42
+    let h_meter=height*0.3048
+    let BMI=weight/(h_meter*h_meter)
+    if(BMI<18.5){
+        console.log("Under Weight")
+    }
+    else if(BMI<25){
+        console.log("Normal Weight")
+    }
+    else if(BMI<30){
+        console.log("Over Weight")
+    }
+    else{
+        console.log("Obesity")
+    }
+}
+console.log()
+
+//Program-10) Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give
+// players clues if their guess is higher, lower or correct. 
+{
+    let me=5
+    let guess=7
+    if(me==guess){
+        console.log("Correct")
+    }
+    else if(me<guess){
+        console.log("Guess is higher")
+    }
+    else{
+        console.log("Guess is lower")
+    }
+}
