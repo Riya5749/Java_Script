@@ -377,31 +377,6 @@ console.log()
     console.log("4) This Solution is Simple While loop =>", count)
 }
 
-//Program-13) Find the Longest Word in a Sentence:
-// Write a function to find the longest word in a given sentence.
-{ 
-let str="I Love Java Script"
-let arr=[]
-let word=""
-for(let char of str){
-    if(char!=""){
-        word=word+char
-    }
-    else{
-        arr.push(word)
-        word=" "
-    }
-}
-arr.push(word)
-console.log(word)
-}
-
-{
-    str="I love java"
-    arr=str.split("")
-    console.log(arr)
-}
-
 
 
 
